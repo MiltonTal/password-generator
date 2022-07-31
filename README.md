@@ -2,7 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+In this project I've used JavaScript to create the logic for a password generator.
 
 - I will need 4 arrarys to store the information(for uppercase, one for lowercase, one for numbers, and one for charactors).
 
