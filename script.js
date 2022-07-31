@@ -25,8 +25,10 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword(){
   var password = "";
   for(var i = 0; i < passwordLength; i++) {
-      var randomChar = Math.random()
+      var randomChar = Math.floor(Math.random() * userChoice.length);
+      password = password + userChoice[randomChar];
   }
+  return password;
 }
 
 function userPrompts(){
