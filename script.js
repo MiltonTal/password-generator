@@ -24,7 +24,13 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 //create the prompt for the users input
-function generatePassword() 
+function generatePassword() {
+  
+}
+
+function userPrompts(){
+  userLegnth = parseInt(prompt("Plseas choose how long you would like your password to be, between 8 and 128."));
+}
       
   
 
