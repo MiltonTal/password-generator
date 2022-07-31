@@ -23,10 +23,15 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword(){
-
+  var password = "";
+  for(var i = 0; i < passwordLength; i++) {
+      var randomChar = Math.random()
+  }
 }
 
 function userPrompts(){
+  userChoice = [];
+
   passwordLength = parseInt(prompt("Choose a password length between 8 and 128"));
  
   if(isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
@@ -46,13 +51,14 @@ function userPrompts(){
   if(confirm("Will your password contain numbers")){
     userChoice = userChoice.concat(numbers);
   }
-
+  return true;
 }
 
 
 
 // Write password to the #password input
 function writePassword() {
+     var truePrompts = userPrompts();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   
