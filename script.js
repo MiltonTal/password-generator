@@ -25,17 +25,28 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword(){
 
 }
+
 function userPrompts(){
   passwordLength = parseInt(prompt("Choose a password length between 8 and 128"));
  
-    if(isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+  if(isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
       alert("Input was invalid try again.");
       return false;
   } 
 
   if(confirm("Will your password contain lowercase letters?")){
-    userChoice = userChoice.concat(confrimLetters);
+    userChoice = userChoice.concat(letters);
   }
+  if(confirm("Will your password contain uppercase letters?")){
+    userChoice = userChoice.concat(upperLetters);
+  }
+  if(confirm("Will your password contain special charactors")){
+    userChoice = userChoice.concat(characters);
+  }
+  if(confirm("Will your password contain numbers")){
+    userChoice = userChoice.concat(numbers);
+  }
+
 }
 
 
