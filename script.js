@@ -55,8 +55,11 @@ function userPrompts(){
 // Write password to the #password input
 function writePassword() {
      var truePrompts = userPrompts();
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
   
-  passwordText.value = password;
+    if(truePrompts){   
+    var password = generatePassword();
+    var passwordText = document.querySelector("#password");
+  
+      passwordText.value = password;
+    }  
 }
