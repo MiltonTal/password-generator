@@ -7,7 +7,7 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var characters = ["!","@","#","$","%","%","^","&","*","(",")","-","_","=","+","`","~","[","]","{","}","|",":",";","<",">","/","?"];
 
 //Confrim variables
-var confrimLetters = letters;
+var confrimLetters;
 var confrimUpperLetters;
 var confrimNumbers;
 var confrimCharactors;
@@ -23,13 +23,19 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword(){
-  passwordLength = prompt("Choose a password length between 8 and 128");
-  console.log(passwordLength);{
-    if (!passwordLength || passwordLength < 8 || passwordLength > 128)
-      generatePassword();
-  } alert("Your password will have " + passwordLength + " charactors");
-  
-  confrimLetters = confrim("Would you like lower case letters in you password?");
+
+}
+function userPrompts(){
+  passwordLength = parseInt(prompt("Choose a password length between 8 and 128"));
+ 
+    if(isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+      alert("Input was invalid try again.");
+      return false;
+  } 
+
+  if(confirm("Will your password contain lowercase letters?")){
+    userChoice = userChoice.concat(confrimLetters);
+  }
 }
 
 
