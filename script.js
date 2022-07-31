@@ -6,12 +6,6 @@ var upperLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var characters = ["!","@","#","$","%","%","^","&","*","(",")","-","_","=","+","`","~","[","]","{","}","|",":",";","<",">","/","?"];
 
-//Confrim variables
-var confrimLetters;
-var confrimUpperLetters;
-var confrimNumbers;
-var confrimCharactors;
-
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
