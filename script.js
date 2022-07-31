@@ -25,11 +25,16 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 //create the prompt for the users input
 function generatePassword() {
-  
+
 }
 
-function userPrompts(){
+function userPrompt(){
   userLegnth = parseInt(prompt("Plseas choose how long you would like your password to be, between 8 and 128."));
+    if(isNaN(userLegnth) || userLegnth < 8 || userLegnth > 128){
+      alert("");
+      return false;
+    }
+    console.log(userLegnth)
 }
       
   
